@@ -1,0 +1,70 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    min-height: 100vh;
+    color: #fff;
+}
+
+.anime-card {
+    background: rgba(26, 26, 46, 0.9);
+    border: 2px solid #4a5568;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.anime-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    border-color: #7c3aed;
+    box-shadow: 0 0 20px rgba(124, 58, 237, 0.3);
+}
+
+.anime-button {
+    background: linear-gradient(45deg, #7c3aed, #c026d3);
+    border: none;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.anime-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 15px rgba(124, 58, 237, 0.5);
+}
+
+.anime-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255, 255, 255, 0.2),
+        transparent
+    );
+    transition: 0.5s;
+}
+
+.anime-button:hover::before {
+    left: 100%;
+}
+
+.anime-input {
+    background: rgba(26, 26, 46, 0.8);
+    border: 2px solid #4a5568;
+    transition: all 0.3s ease;
+}
+
+.anime-input:focus {
+    border-color: #7c3aed;
+    box-shadow: 0 0 10px rgba(124, 58, 237, 0.3);
+}
+
+.neon-text {
+    color: #fff;
+    text-shadow: 0 0 10px rgba(124, 58, 237, 0.5),
+                 0 0 20px rgba(124, 58, 237, 0.3),
+                 0 0 30px rgba(124, 58, 237, 0.1);
+}
